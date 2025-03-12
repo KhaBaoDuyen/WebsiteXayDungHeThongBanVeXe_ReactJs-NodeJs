@@ -1,0 +1,16 @@
+{
+   "liveSassCompile.settings.formats": [
+      {
+         "format": "expanded",
+         "extensionName": ".css",
+         "savePath": "/FE/src/css"
+      }
+   ],
+   "liveSassCompile.settings.includeItems": [
+      "/FE/src/scss/**/*.scss"
+   ],
+   "liveSassCompile.settings.excludeList": [
+      "/**/node_modules/**",
+      "/**/bower_components/**"
+   ]
+}
