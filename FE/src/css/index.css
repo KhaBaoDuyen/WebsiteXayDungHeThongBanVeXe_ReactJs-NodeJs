@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 header {
   background-image: url("/FE/src/assets/images/main/background.webp");
   min-height: 35rem;
@@ -6,10 +10,19 @@ header {
 }
 
 body {
-  color: var(rgb(3, 18, 26));
-  font-family: var("Barlow", sans-serif);
+  color: var(--text-color);
+  font-family: var(--font-family);
   background-color: #e2e8ef;
   margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p, a {
+  color: var(--text-color);
 }
 
 /*# sourceMappingURL=index.css.map */

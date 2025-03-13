@@ -5,6 +5,6 @@
   },
   "scripts": {
     "scss": "sass --watch FE/src/scss/index.scss:FE/src/css/index.css",
-    "tailwind": "npx tailwindcss -i ./FE/src/css/tailwind.css -o ./FE/src/css/tailwind-output.css --watch"
+    "tailwind": "npx @tailwindcss/cli -i ./FE/src/css/tailwind.css -o ./FE/src/css/tailwind-output.css --watch"
   }
 }
