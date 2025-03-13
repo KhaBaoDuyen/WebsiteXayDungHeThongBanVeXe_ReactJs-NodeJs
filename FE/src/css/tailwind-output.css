@@ -1,0 +1,32 @@
+/*! tailwindcss v4.0.13 | MIT License | https://tailwindcss.com */
+.mx-auto {
+  margin-inline: auto;
+}
+.flex {
+  display: flex;
+}
+.w-\[80\%\] {
+  width: 80%;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.no-underline {
+  text-decoration-line: none;
+}
+.transition {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}

@@ -1,5 +1,15 @@
-button {
-  background-color: red;
+header {
+  background-image: url("/FE/src/assets/images/main/background.webp");
+  min-height: 35rem;
+  background-size: cover;
+  color: white !important;
+}
+
+body {
+  color: var(rgb(3, 18, 26));
+  font-family: var("Barlow", sans-serif);
+  background-color: #e2e8ef;
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -3,11 +3,11 @@
       {
          "format": "expanded",
          "extensionName": ".css",
-         "savePath": "/FE/src/css"
+         "savePath": "/FE/src/css"  // Chỉ định thư mục chứa các tệp CSS, không phải tệp
       }
    ],
    "liveSassCompile.settings.includeItems": [
-      "/FE/src/scss/**/*.scss"
+      "/FE/src/scss/index.scss"  // Chỉ bao gồm tệp index.scss
    ],
    "liveSassCompile.settings.excludeList": [
       "/**/node_modules/**",

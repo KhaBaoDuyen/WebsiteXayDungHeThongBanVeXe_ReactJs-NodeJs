@@ -1,4 +1,17 @@
+
 @use './components/header';
 @use './components/footer';
+
 @use './mixin';
+@use './variables' as *;
+
+
 @use './pages/home';
+
+body{
+color:var($text-color);
+font-family: var($font-family);
+background-color: #e2e8ef;
+margin: 0 !important;
+}
+
