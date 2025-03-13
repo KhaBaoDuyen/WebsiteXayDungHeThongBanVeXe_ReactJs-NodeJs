@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,97 +7,404 @@
     <link href="../css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/tailwind-output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 
-<body class="home m-0  p-0 ">
-    <header class="p-0 ">
-        <div class="menu fixed top-0 left-0 w-full z-50">
-            <div class="menu-top  flex justify-between w-[80%] mx-auto items-center ">
-                <div class="menu-top-left font-bold text-2xl ">
-                    <img src="../../public/assets/images/main/logo.png" alt="" width="50%">
+<body class=" m-0 p-0">
+
+    <header class="p-0 mb-3">
+        <div class="menu fixed top-0 left-0 w-full z-50" id="menu">
+            <div class="menu-top flex justify-between w-[80%] lg:w-[80%] mx-auto items-center py-4">
+                <div class="menu-top-left font-bold text-2xl">
+                    <img src="../../public/assets/images/main/logo.png" alt="" class="w-1/2 md:w-[50%]">
                 </div>
                 <div class="menu-top-right flex p-2">
-                    <ul class="flex gap-4 justify-between list-noner items-center  ">
-                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Hỗ
-                                trợ</a>
-                        </li>
-                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Đặt chỗ
-                                của
+                    <ul class="flex flex-col md:flex-row gap-4 justify-between list-none items-center">
+                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#">Hỗ trợ</a></li>
+                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#">Đặt chỗ của
                                 tôi</a></li>
+                        <li class="border border-white rounded-lg px-4 py-2 hover:bg-black/10 cursor-pointer"><a
+                                href="#" class="no-underline"><i class="fas fa-user mr-2"></i> Đăng ký</a></li>
                         <li
-                            class="border border-white rounded-lg px-4 py-2 hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md ">
-                            <a href="#" class="no-underline"> <i class="fas fa-user mr-2"></i> Đăng ký</a>
-                        </li>
-                        <li
-                            class=" rounded-lg px-4 py-2 bg-sky-500 hover:text-white transition duration-300 font-bold hover:bg-sky-600/50">
-                            <a href="#" class="no-underline ">Đăng nhập</a>
+                            class="rounded-lg px-4 py-2 bg-sky-500 hover:text-white transition duration-300 font-bold hover:bg-sky-600/50">
+                            <a href="#" class="no-underline">Đăng nhập</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr class="border-gray-600 opacity-60" />
-            <div class="menu-bottom  flex justify-start w-[80%] mx-auto items-center py-1">
-                <ul class="flex gap-4 justify-between list-none items-center font-bold">
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                        Đặt vé xe
-                    </li>
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                        Về chúng tôi
-                    </li>
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                        Lịch trình
-                    </li>
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                        Tin tức
-                    </li>
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                        Liên hệ
-                    </li>
+            <hr class="border-gray-500 opacity-50">
+            <div class="menu-bottom flex justify-start w-[80%] lg:w-[80%] mx-auto items-center py-1">
+                <ul class="flex flex-wrap gap-4 justify-center md:justify-start list-none items-center font-bold">
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Đặt vé xe</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Về chúng tôi</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Lịch trình</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Tin tức</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Liên hệ</li>
                 </ul>
             </div>
-            <hr class="border-gray-600 opacity-60" />
+            <hr class="border-gray-500 opacity-50">
         </div>
 
-        <div class="w-full h-[500px] bg-cover bg-center relative text-white flex justify-center items-center">
-            <div class="absolute w-3/4 max-w-[800px] text-center">
-                <h1 class="text-4xl font-bold mb-8">Khám Phá Việt Nam, Theo Cách Của Bạn</h1>
-
-                <div class="flex justify-between text-white text-sm px-2  ">
-                    <span>Từ</span>
-                    <span>Đến</span>
-                    <span>Ngày khởi hành</span>
+        <div id="mobileMenu" class=" w-full z-50 bg-[#043175] text-white ">
+            <div class="menu-top flex justify-between w-[90%] mx-auto items-center py-4">
+                <div class="menu-top-left font-bold text-2xl">
+                    <img src="../../public/assets/images/main/logo.png" alt="Logo" class="w-1/2 md:w-[50%]">
                 </div>
 
-                <div class="flex items-center bg-white shadow-md rounded px-4 py-2 w-full">
-                    <div class="flex items-center space-x-2 text-gray-600">
-                        <i class="fas fa-bus text-lg text-sky-700"></i>
-                        <input type="text" placeholder="Nhập điểm đi" class="outline-none w-full">
-                    </div>
+                <button id="menu-toggle" class="block md:hidden p-2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
 
-                    <div class="flex items-center justify-center mx-4">
-                        <i class="fas fa-exchange-alt text-sky-700 text-lg cursor-pointer hover:text-gray-700"></i>
-                    </div>
+            <hr class="border-gray-500 opacity-50">
 
-                    <div class="flex items-center space-x-2 text-gray-600">
-                        <i class="fas fa-bus text-lg text-sky-700"></i>
-                        <input type="text" placeholder="Nhập điểm đến" class="outline-none w-full">
-                    </div>
+            <div id="mobileDropdownMenu" class="hidd shadow-md">
+                <ul class="flex flex-col text-center font-bold py-4">
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Đặt vé xe</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Về chúng tôi</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Lịch trình</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Tin tức</li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">Liên hệ</li>
+                </ul>
+            </div>
+        </div>
 
-                    <div class="flex items-center space-x-2 text-gray-600 ml-4">
-                        <i class="fas fa-calendar-alt text-lg text-sky-700"></i>
-<input type="date" class="outline-none w-full text-sky-700 appearance-none">
+        <div
+            class="w-full h-[300px] md:h-[500px] bg-cover bg-center relative text-white flex justify-center items-center">
+            <div class="absolute w-full md:w-3/4 max-w-[1000px] text-center mt-[13%] px-4 header-content">
+                <h1 class="text-2xl md:text-4xl font-bold mb-8">Khám Phá Việt Nam, Theo Cách Của Bạn</h1>
+                <div class="w-full flex justify-center items-center rounded-[16px] border-[6px] border-gray-100/10">
+                    <form action="" method=""
+                        class="w-full bg-white shadow-md rounded-lg p-4 flex flex-col md:flex-row items-end gap-4">
+                        <div class="flex flex-col w-full md:w-[30%]">
+                            <label class="text-blue-950 text-sm text-left px-2 font-semibold mb-1">Từ</label>
+                            <div class="flex items-center p-2 rounded">
+                                <i class="fas fa-bus text-lg text-sky-700"></i>
+                                <input type="text" placeholder="Nhập điểm đi"
+                                    class="outline-none w-full bg-transparent ml-2 py-1 text-blue-950">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center w-full md:w-[5%]">
+                            <i class="fas fa-exchange-alt text-sky-700 text-lg cursor-pointer hover:text-gray-700"></i>
+                        </div>
+                        <div class="flex flex-col w-full md:w-[30%]">
+                            <label class="text-blue-950 text-sm text-left px-2 font-semibold mb-1">Đến</label>
+                            <div class="flex items-center bg-white p-2 rounded">
+                                <i class="fas fa-bus text-lg text-sky-700"></i>
+                                <input type="text" placeholder="Nhập điểm đến"
+                                    class="outline-none w-full bg-transparent ml-2 py-1 text-blue-950">
+                            </div>
+                        </div>
+                      <div class="flex flex-col w-[30%]">
+                            <label class="text-blue-950 text-sm text-left px-2 font-semibold mb-1">Ngày khởi
+                                hành</label>
+                            <div class="flex items-center bg-white  p-2 rounded relative">
+                                <i class="fas fa-calendar-alt text-lg text-sky-700 cursor-pointer absolute left-2"
+                                    onclick="document.getElementById('departure-date').showPicker()"></i>
+
+                                <input type="date" id="departure-date" class="outline-none w-full bg-transparent pl-8 text-blue-950 cursor-pointer 
+                    appearance-none [&::-webkit-calendar-picker-indicator]:hidden">
+                            </div>
+                        </div>
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 w-full md:w-[5%] text-white p-3 rounded transition duration-300">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full md:w-[80%] flex flex-wrap items-center gap-2 mt-4 text-white justify-start">
+                    <span class="font-bold">Tìm kiếm</span>
+                    <a href="#" class="flex items-center gap-1 bg-gray-500 text-white px-3 py-1 rounded text-sm">Khám
+                        phá ý tưởng chuyến đi</a>
+                    <a href="#" class="flex items-center gap-1 bg-gray-500 text-white px-3 py-1 rounded text-sm">Tin
+                        tức</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full text-center mb-7">
+            <div id="comment-container" class="inline-block bg-gray-100 p-3 rounded-lg text-sm text-gray-700 italic">
+                <p>“Tuyến Sài Gòn - Đà Lạt dịch vụ tốt, tài xế vui vẻ, xe sạch sẽ! ⭐⭐⭐⭐⭐”</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="home mx-auto w-full md:w-[80%] mb-5 px-4" id="home">
+        <div class="bg-white p-4 rounded-lg shadow mt-4 text-center mx-auto">
+            <h2 class="text-xl md:text-2xl font-bold text-[#003b95]">TẠI SAO LẠI LỰA CHỌN CHÚNG TÔI?</h2>
+            <p class="mb-4">Chúng tôi cam kết mang đến dịch vụ tốt nhất cho khách hàng</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-start p-4">
+                <div class="flex items-start text-left rounded-lg shadow-md w-full md:w-1/3">
+                    <img src="../../public/assets/images/main/icon1.webp" alt="" class="w-20 h-20 mb-2">
+                    <p class="max-w-xs"><strong>Đáp ứng mọi nhu cầu của bạn</strong><br>Từ đặt vé xe, bạn có thể tin
+                        chọn sản phẩm hoàn chỉnh của chúng tôi.</p>
+                </div>
+                <div class="flex items-start text-left rounded-lg shadow-md w-full md:w-1/3">
+                    <img src="../../public/assets/images/main/icon2.webp" alt="" class="w-20 h-20 mb-2">
+                    <p class="max-w-xs"><strong>Tùy chọn đặt chỗ linh hoạt</strong><br>Kế hoạch thay đổi bất ngờ? Đừng
+                        lo!Đổi lịch hoặc Hoàn tiền dễ dàng.</p>
+                </div>
+                <div class="flex items-start text-left rounded-lg shadow-md w-full md:w-1/3">
+                    <img src="../../public/assets/images/main/icon3.webp" alt="" class="w-20 h-20 mb-2">
+                    <p class="max-w-xs"><strong>Thanh toán an toàn và thuận tiện</strong><br>Tận hưởng nhiều cách thanh
+                        toán an toàn thuận tiện nhất cho bạn</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow mt-4 text-center mx-auto">
+            <h2 class="text-xl md:text-2xl font-bold text-[#003b95]">TUYẾN PHỔ BIẾN</h2>
+            <p class="mb-4">Được khách hàng tin tưởng và lựa chọn</p>
+            <div class="flex flex-col md:flex-row gap-5 flex-wrap justify-center">
+                <div class="max-w-sm mx-auto p-4 rounded-xl shadow-md w-full md:w-1/3">
+                    <div class="relative rounded-xl overflow-hidden">
+                        <img src="../../public/assets/images/main/Rectangle 23 (2).png" class="w-full">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Tuyến xe từ <br> <span class="text-2xl">Tp Hồ
+                                    Chí Minh</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Đà Lạt</p>
+                                <p class="text-gray-500 text-sm">305km - 8 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">290.000đ</p>
+                        </div>
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Cần Thơ</p>
+                                <p class="text-gray-500 text-sm">166km - 5 giờ 30 phút - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">165.000đ</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Long Xuyên</p>
+                                <p class="text-gray-500 text-sm">203km - 5 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">190.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mx-auto p-2 rounded-xl shadow-md w-full md:w-1/3">
+                    <div class="relative rounded-xl overflow-hidden">
+                        <img src="../../public/assets/images/main/Rectangle 23 (3).png" alt="Đà Lạt" class="w-full">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Tuyến xe từ <br> <span class="text-2xl">Đà
+                                    Lạt</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">TP. Hồ Chí Minh</p>
+                                <p class="text-gray-500 text-sm">310km - 8 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">290.000đ</p>
+                        </div>
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Đà Nẵng</p>
+                                <p class="text-gray-500 text-sm">757km - 17 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">410.000đ</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Cần Thơ</p>
+                                <p class="text-gray-500 text-sm">457km - 11 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">435.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-sm mx-auto p-2 rounded-xl shadow-md w-full md:w-1/3">
+                    <div class="relative rounded-xl overflow-hidden">
+                        <img src="../../public/assets/images/main/Rectangle 23 (4).png" alt="Đà Nẵng" class="w-full">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Tuyến xe từ <br> <span class="text-2xl">Đà
+                                    Nẵng</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Đà Lạt</p>
+                                <p class="text-gray-500 text-sm">666km - 17 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">410.000đ</p>
+                        </div>
+                        <div class="flex justify-between border-b pb-2">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">BX An Sương</p>
+                                <p class="text-gray-500 text-sm">966km - 20 giờ - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">470.000đ</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="hover:text-sky-700">
+                                <p class="font-bold text-lg text-left">Nha Trang</p>
+                                <p class="text-gray-500 text-sm">528km - 9 giờ 25 phút - 13/03/2025</p>
+                            </a>
+                            <p class="text-lg font-semibold text-gray-700">370.000đ</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="bg-white p-4 rounded-lg shadow mt-4 text-center mx-auto">
+            <h2 class="text-xl md:text-2xl font-bold text-[#003b95]">TIN TỨC</h2>
+            <p class="mb-4">Được khách hàng tin tưởng và lựa chọn</p>
+            <div class="swiper mySwiper overflow-hidden">
+                <div class="swiper-wrapper flex mx-auto gap-4">
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog1.png" alt="Khám phá vẻ đẹp của Đà Lạt"
+                            class="rounded-lg mb-2 w-full">
+                        <h3 class="text-lg font-bold truncate-title">Khám phá vẻ đẹp của Đà Lạt: Thành phố mộng mơ...
+                        </h3>
+                        <p class="text-gray-500 text-sm truncate-content">Đà Lạt nổi tiếng với khí hậu ôn hòa, rừng
+                            thông xanh bạt ngàn, hồ nước yên tĩnh và những cánh đồng hoa rực rỡ sắc màu. Đây là điểm đến
+                            lý tưởng để nghỉ dưỡng...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog2.jpg" alt="Những món ăn đặc sản"
+                            class="rounded-lg mb-2 w-full">
+                        <h3 class="text-lg font-bold truncate-title">Những món ăn đặc sản không thể bỏ qua khi du lịch
+                            Việt Nam...</h3>
+                        <p class="text-gray-500 text-sm truncate-content">Ẩm thực Việt Nam vô cùng phong phú với phở Hà
+                            Nội, bún bò Huế, bánh mì Sài Gòn hay cơm tấm. Mỗi vùng miền đều có những món ăn đặc trưng
+                            mang đậm bản sắc văn hóa...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog3.png" alt="Kinh nghiệm du lịch"
+                            class="w-full rounded-lg mb-2">
+                        <h3 class="text-lg font-bold truncate-title">Kinh nghiệm du lịch tiết kiệm chi phí mà vẫn trọn
+                            vẹn...</h3>
+                        <p class="text-gray-500 text-sm truncate-content">Du lịch không nhất thiết phải tốn kém. Hãy lựa
+                            chọn phương tiện di chuyển phù hợp, săn vé máy bay giá rẻ, đặt phòng khách sạn sớm và trải
+                            nghiệm ẩm thực đường phố...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog4.png" alt="Top 10 địa điểm du lịch"
+                            class="w-full rounded-lg mb-2">
+                        <h3 class="text-lg font-bold truncate-title">Top 10 địa điểm du lịch đẹp nhất Việt Nam không thể
+                            bỏ lỡ...</h3>
+                        <p class="text-gray-500 text-sm truncate-content">Việt Nam sở hữu những danh thắng tuyệt đẹp như
+                            vịnh Hạ Long, phố cổ Hội An, Mộc Châu mùa hoa cải, Sapa sương mù và Phú Quốc với những bãi
+                            biển trong xanh...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog5.png" alt="Lễ hội truyền thống"
+                            class="w-full rounded-lg mb-2">
+                        <h3 class="text-lg font-bold truncate-title">Những lễ hội truyền thống đặc sắc của người Việt...
+                        </h3>
+                        <p class="text-gray-500 text-sm truncate-content">Việt Nam có nhiều lễ hội đặc trưng như Tết
+                            Nguyên Đán, lễ hội chọi trâu Đồ Sơn, lễ hội đua ghe Ngo của người Khmer hay lễ hội Gióng
+                            mang ý nghĩa lịch sử to lớn...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog6.png" alt="Bí quyết săn vé máy bay"
+                            class="w-full rounded-lg mb-2">
+                        <h3 class="text-lg font-bold truncate-title">Bí quyết săn vé máy bay giá rẻ cho chuyến du lịch
+                            tiết kiệm...</h3>
+                        <p class="text-gray-500 text-sm truncate-content">Để mua vé máy bay giá rẻ, hãy đặt vé sớm, chọn
+                            thời điểm khuyến mãi, đăng ký nhận thông báo giảm giá từ các hãng hàng không và sử dụng các
+                            ứng dụng đặt vé thông minh...</p>
+                    </a>
+                    <a href="#" class="swiper-slide bg-white shadow-md rounded-lg p-2 block">
+                        <img src="../../public/assets/images/main/blog7.png" alt="Khám phá văn hóa"
+                            class="w-full rounded-lg mb-2">
+                        <h3 class="text-lg font-bold truncate-title">Khám phá những nét văn hóa độc đáo của dân tộc Việt
+                            Nam...</h3>
+                        <p class="text-gray-500 text-sm truncate-content">Việt Nam là một đất nước đa dạng văn hóa với
+                            54 dân tộc anh em. Từ phong tục tập quán, trang phục truyền thống đến những làn điệu dân ca,
+                            tất cả đều thể hiện nét đặc trưng riêng...</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    </header>
-    <main class="home w-[80%] mx-auto ">
-
+        <div class="bg-white p-4 rounded-lg shadow mt-4 text-center mx-auto">
+            <h2 class="text-xl md:text-2xl font-bold text-[#003b95]">CHẤT LƯỢNG LÀ DANH DỰ</h2>
+            <p class="mb-4">Chúng tôi cam kết mang đến dịch vụ tốt nhất cho khách hàng</p>
+            <div class="content relative">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div class="bg-gray-100/10 p-4 rounded-lg text-center mt-[8%] w-full md:w-1/4">
+                        <h3 class="text-xl font-bold text-orange-600 mb-2">Số lượng vé đã đặt</h3>
+                        <h1 class="text-4xl font-semibold text-gray-700">1,234+</h1>
+                    </div>
+                    <div class="bg-gray-100/10 p-4 rounded-lg text-center mt-[8%] w-full md:w-1/4">
+                        <h3 class="text-xl font-bold text-orange-600 mb-2">Bình luận</h3>
+                        <p class="text-4xl font-semibold text-gray-700">567+</p>
+                    </div>
+                    <div class="bg-gray-100/10 p-4 rounded-lg text-center mt-[8%] w-full md:w-1/4">
+                        <h3 class="text-xl font-bold text-orange-600 mb-2">Số chuyến</h3>
+                        <p class="text-4xl font-semibold text-gray-700">89+</p>
+                    </div>
+                    <div class="bg-gray-100/10 p-4 rounded-lg text-center mt-[8%] w-full md:w-1/4">
+                        <h3 class="text-xl font-bold text-orange-600 mb-2">Số lượng khách hàng</h3>
+                        <p class="text-4xl font-semibold text-gray-700">456+</p>
+                    </div>
+                    <img id="bus" src="../../public/assets/images/main/bus.png" alt="Bus" width="350"
+                        class="absolute bottom-0 left-[100%] opacity-0 transition-all duration-1000 md:left-auto md:right-0">
+                </div>
+            </div>
+        </div>
     </main>
 
+    <footer>
+        <div class="footer-top"></div>
+        <div class="footer-bottom bg-[#1C2930] text-white py-10">
+            <div class="px-4 w-full md:w-[80%] mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-44">
+                    <div>
+                        <img src="../../public/assets/images/main/logo.png" alt="Logo" class="w-full md:w-[60%] mb-4">
+                        <a href="" class="bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center gap-2">🤝 Liên
+                            hệ với chúng tôi</a>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Về chúng tôi</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-gray-100">Cách đặt chỗ</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Liên hệ chúng tôi</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Trợ giúp</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Tuyển dụng</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Dịch vụ</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-gray-100">Vé xe khách</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Đưa đón sân bay</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Cho thuê xe</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Chính sách</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#" class="hover:text-gray-100">Chính sách bảo mật</a></li>
+                            <li><a href="#" class="hover:text-gray-100">Điều khoản & Điều kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-4 text-center text-gray-400 text-sm">
+                © 2025 Bụi đường- Tất cả quyền được bảo lưu.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
