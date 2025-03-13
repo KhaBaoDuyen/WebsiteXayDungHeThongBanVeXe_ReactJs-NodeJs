@@ -46,7 +46,7 @@ header {
 #home .content {
   background-image: url("../../public/assets/images/main/area-banner-vn.webp");
   background-size: cover;
-  background-origin: 90%;
+  background-position: center;
   height: 34rem;
 }
 @keyframes busMove {
