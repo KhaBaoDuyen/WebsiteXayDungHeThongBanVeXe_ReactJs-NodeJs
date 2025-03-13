@@ -12,53 +12,90 @@
 
 <body class="home m-0  p-0 ">
     <header class="p-0 ">
-        <div class="menu-top  flex justify-between w-[80%] mx-auto items-center ">
-            <div class="menu-top-left font-bold text-2xl ">
-                <img src="../../public/assets/images/main/logo.png" alt="" width="60%">
+        <div class="menu fixed top-0 left-0 w-full z-50">
+            <div class="menu-top  flex justify-between w-[80%] mx-auto items-center ">
+                <div class="menu-top-left font-bold text-2xl ">
+                    <img src="../../public/assets/images/main/logo.png" alt="" width="50%">
+                </div>
+                <div class="menu-top-right flex p-2">
+                    <ul class="flex gap-4 justify-between list-noner items-center  ">
+                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Hỗ
+                                trợ</a>
+                        </li>
+                        <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Đặt chỗ
+                                của
+                                tôi</a></li>
+                        <li
+                            class="border border-white rounded-lg px-4 py-2 hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md ">
+                            <a href="#" class="no-underline"> <i class="fas fa-user mr-2"></i> Đăng ký</a>
+                        </li>
+                        <li
+                            class=" rounded-lg px-4 py-2 bg-sky-500 hover:text-white transition duration-300 font-bold hover:bg-sky-600/50">
+                            <a href="#" class="no-underline ">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-top-right flex p-2">
-                <ul class="flex gap-4 justify-between list-noner items-center  ">
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Hỗ trợ</a>
+            <hr class="border-gray-600 opacity-60" />
+            <div class="menu-bottom  flex justify-start w-[80%] mx-auto items-center py-1">
+                <ul class="flex gap-4 justify-between list-none items-center font-bold">
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
+                        Đặt vé xe
                     </li>
-                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md"><a href="#" class="">Đặt chỗ của
-                            tôi</a></li>
-                    <li
-                        class="border border-white rounded-lg px-4 py-2 hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md ">
-                        <a href="#" class="no-underline"> <i class="fas fa-user mr-2"></i> Đăng ký</a>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
+                        Về chúng tôi
                     </li>
-                    <li
-                        class=" rounded-lg px-4 py-2 bg-sky-500 hover:text-white transition duration-300 font-bold hover:bg-sky-600/50">
-                        <a href="#" class="no-underline ">Đăng nhập</a>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
+                        Lịch trình
+                    </li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
+                        Tin tức
+                    </li>
+                    <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
+                        Liên hệ
                     </li>
                 </ul>
             </div>
+            <hr class="border-gray-600 opacity-60" />
         </div>
-        <hr class="border-gray-600 opacity-60" />
-        <div class="menu-bottom  flex justify-start w-[80%] mx-auto items-center py-2 ">
-            <ul class="flex gap-4 justify-between list-none items-center">
-                <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                    Đặt vé xe
-                </li>
-                <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                    Về chúng tôi
-                </li>
-                <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                    Lịch trình
-                </li>
-                <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                    Tin tức
-                </li>
-                <li class="hover:bg-black/10 px-4 py-2 cursor-pointer rounded-md">
-                    Liên hệ
-                </li>
-            </ul>
+
+        <div class="w-full h-[500px] bg-cover bg-center relative text-white flex justify-center items-center">
+            <div class="absolute w-3/4 max-w-[800px] text-center">
+                <h1 class="text-4xl font-bold mb-8">Khám Phá Việt Nam, Theo Cách Của Bạn</h1>
+
+                <div class="flex justify-between text-white text-sm px-2  ">
+                    <span>Từ</span>
+                    <span>Đến</span>
+                    <span>Ngày khởi hành</span>
+                </div>
+
+                <div class="flex items-center bg-white shadow-md rounded px-4 py-2 w-full">
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <i class="fas fa-bus text-lg text-sky-700"></i>
+                        <input type="text" placeholder="Nhập điểm đi" class="outline-none w-full">
+                    </div>
+
+                    <div class="flex items-center justify-center mx-4">
+                        <i class="fas fa-exchange-alt text-sky-700 text-lg cursor-pointer hover:text-gray-700"></i>
+                    </div>
+
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <i class="fas fa-bus text-lg text-sky-700"></i>
+                        <input type="text" placeholder="Nhập điểm đến" class="outline-none w-full">
+                    </div>
+
+                    <div class="flex items-center space-x-2 text-gray-600 ml-4">
+                        <i class="fas fa-calendar-alt text-lg text-sky-700"></i>
+<input type="date" class="outline-none w-full text-sky-700 appearance-none">
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr class="border-gray-600 opacity-60" />
+
+
     </header>
     <main class="home w-[80%] mx-auto ">
-                 <div>
-<h1></h1>
-</div>
+
     </main>
 
 </body>

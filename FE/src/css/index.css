@@ -19,6 +19,12 @@ h4,
 h5,
 h6, p, a {
   color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 /*# sourceMappingURL=index.css.map */
