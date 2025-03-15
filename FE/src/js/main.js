@@ -86,5 +86,22 @@ document.addEventListener('DOMContentLoaded', function () {
       observer.observe(bus);
    }
 
+// --------------- cancel ves xe
+window.openCancelModal = function () {
+    document.getElementById("cancelModal").classList.remove("hidden");
+};
+
+window.closeCancelModal = function () {
+    document.getElementById("cancelModal").classList.add("hidden");
+};
+
+window.toggleTextarea = function (show) {
+    const otherTextarea = document.getElementById("otherReason");
+    if (show) {
+        otherTextarea.classList.remove("hidden");
+    } else {
+        otherTextarea.classList.add("hidden");
+    }
+};
 
 });

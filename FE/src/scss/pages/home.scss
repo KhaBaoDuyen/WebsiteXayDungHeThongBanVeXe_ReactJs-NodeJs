@@ -1,11 +1,15 @@
+body:has(#home) header,
+body:has(#bus) header {
+    background-image: url('../../public/assets/images/main/background.webp');
+    min-height: 35rem;
+    background-size: cover;
+    color: white !important;
+}
 
-   header {
-      background-image: url('../../public/assets/images/main/background.webp');
-      min-height: 35rem;
-      background-size: cover;
-      color: white !important;
+header{
+  color: white !important;
 
-   }
+}
 #home {
 
    .content {
