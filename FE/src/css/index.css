@@ -97,5 +97,7 @@ input[type=date]::-moz-calendar-picker-indicator {
 .swiper-slide {
   width: auto;
 }
-
+.about-us{
+  text-align: justify;
+}
 /*# sourceMappingURL=index.css.map */
