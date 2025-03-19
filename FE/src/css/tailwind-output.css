@@ -501,7 +501,7 @@
   border-color: #FCDACE;
 }
 .border-\[border-\[\#FCDACE\]\] {
-  border-color: border-[#FCDACE];
+  border-color: #FCDACE;
 }
 .border-gray-100 {
   border-color: var(--color-gray-100);
