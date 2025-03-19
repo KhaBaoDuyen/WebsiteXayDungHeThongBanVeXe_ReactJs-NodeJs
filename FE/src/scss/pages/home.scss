@@ -1,4 +1,5 @@
 body:has(#home) header,
+body:has(#booktickets) header,
 body:has(#busDetail) header {
     background-image: url('../../public/assets/images/main/background.webp');
     min-height: 35rem;
